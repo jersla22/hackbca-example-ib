@@ -66,7 +66,7 @@
 
   <!-- Special initialization script for initializing .datepicker and.timepicker with options -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addProjectListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.datepicker');
       var instances = M.Datepicker.init(elems, {
         format: 'mm-dd-yyyy',
@@ -74,7 +74,7 @@
       });
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addProjectListener('DOMContentLoaded', function () {
       var elems = document.querySelectorAll('.timepicker');
       var instances = M.Timepicker.init(elems, {
         defaultTime: 'now', // Set default time: 'now', '1:30AM', '16:30'

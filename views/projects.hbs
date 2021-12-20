@@ -67,7 +67,7 @@
             <!-- ADMIN ONLY BUTTONS -->
             <td nowrap>
 
-              <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="/projectform.html"><i
+              <a class="btn-floating btn-small waves-effect waves-light green lighten-1" href="/projects/modify/{{project_id}}"><i
                   class="material-icons">edit</i></a>
               <a class="btn-floating waves-effect waves-light red"
                 onclick='confirmDelete("{{project_name}}","{{ project_id}}", ".")'><i
@@ -80,8 +80,8 @@
       </table>
     </div>
 
-    <a href="/projectform.html" class="btn-floating btn-large orange fixed-action-btn">
+    <a href="/projects/create" class="btn-floating btn-large orange fixed-action-btn">
       <i class="large material-icons">create</i>
     </a>
   
-  <script src="/js/event_utils.js"></script>
+  {{!-- <script src="/js/event_utils.js"></script> --}}
